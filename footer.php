@@ -1,3 +1,6 @@
 <footer>
-<p>Escribenos a oswaldo.com</p>
+    <div id="footer">
+        
+    </div>
+    <p>Cualquier sugerencia a: noalabica@gmail.com</p>
 </footer>

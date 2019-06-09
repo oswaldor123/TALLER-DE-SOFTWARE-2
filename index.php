@@ -11,11 +11,74 @@
     <?php  
         include ("header.php");
     ?>
-
-    <div id="cabecera">
-        <p>"Porque todos los animales merecen un hogar, ayudamos a los animales <br> a encontrar una familia"</p>
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="imagenes/perro1.png" alt="">
+            </li>
+            <li>
+                <img src="imagenes/perro2.png" alt="">
+            </li>
+            <li>
+                <img src="imagenes/perro 3.png" alt="">
+            </li>
+            <li>
+                <img src="imagenes/perro4.png" alt="">
+            </li>
+        </ul>
     </div>
-
+    <div id="presentacion">
+        <div class="primero">
+            <h3>¿Quiénes somos?</h3>
+            <p>
+                Somos una organización amante de los animales, que busca brindarle
+                una mejor calidad a todos esos amigos de 4 patas.
+            </p>
+            <h3>Misión</h3>
+            <p>
+                Trabajamos con la comunidad para crear un sistema que permita brindarle
+                los cuidados básicos a todos los animales en situación de riesgo, 
+                buscando reducir el número de animales en las calles.
+            </p>
+            <h3>Visión</h3>
+            <p>
+                Llegar a ser un aplicativo empleado a nivel internacional, para poder
+                ayudar a todos aquellos animales que se encuentren sin hogar, 
+                brindándoles los cuidados adecuados hasta que encuentren una familia.
+            </p>
+        </div>
+        <div class="segundo">
+            <div id="cuadro">
+                <img src="imagenes/amigo2.png" alt="" height="70px">
+            </div>
+        </div>
+    </div>
+    <div id="explorador">
+        <div class="botones" id="uno">
+            <img src="imagenes/registr.png" class="icono">
+            <p>Registrar Mascota</p>
+        </div>
+        <div class="botones" id="dos">
+            <img src="imagenes/adopta.png" class="icono">
+            <p>Adopta</p>
+        </div>
+        <div class="botones" id="tres">
+            <img src="imagenes/se busca.png" class="icono">
+            <p>Se Busca</p> 
+        </div>
+        <div class="botones" id="cuatro">
+            <img src="imagenes/veterinario.png" class="icono">
+            <p>Veterinario</p> 
+        </div>
+        <div class="botones" id="cinco">
+            <img src="imagenes/esterilizacion.png" class="icono">
+            <p>Esterilización</p>  
+        </div>
+        <div class="botones" id="seis">
+            <img src="imagenes/donacion.png"  class="icono">
+            <p>Donaciones</p>
+        </div>
+    </div>
     <?php
         include ("footer.php");
     ?>

@@ -1,31 +1,227 @@
-header{
-    background-color: aqua;
-    height: 60px;
+body{
+    margin:0;
+    padding:0;
+    background:url(imagenes/fondo.jpeg);
+}
+/*CSS PARA EL HEADER*/
+#padre{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(138,190,175);
+    background-color:white;
+}
+#logo img{
+    margin-left: 20px;
+}
+#logo{
+    width:35%;
     display: flex;
-    justify-content: flex-end;
+}
+h3{
+    margin-top:25px;
+    color:rgb(138,190,175);
+}
+#navegador{
+    width:65%;
+}
+#navegador a{
+    color:rgb(138,190,175);
+    display:block;
+    height:50px;
+    display:flex;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-header nav a{
-    text-decoration: none;
-    color: white;
-    margin: 15px;
+#navegador a:hover{
+    background-color: rgb(138,190,175);
+    color:white;
+}
+#navegador ul{
+    list-style: none;
+    display:flex;
+}
+#navegador li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#navegador li:hover .submenu > li{
+    display:block;
+    top:0px;
+}
+.submenu li{
+    display:none;
+    position: absolute;
+    top:0px;
+}
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+/*CSS PARA EL FOOTER  NO SE QUE PONER AIUDAAA*/
+footer{
+    background-color: blue;
+}
+/*CSS PARA EL INDEX*/
+/*CSS PARA EL SLIDER*/
+.slider{
+    width: 95%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding:0;
+    display:flex;
+    width:400%;
+
+    animation: cambio 20s infinite;  /*Indica el tiempo de cada slide*/
+    animation-direction: alternate; /*Cuando termina la animacion regresa*/
+}
+@keyframes cambio{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
+.slider li{
+    list-style: none;
+    width:100%;
+}
+.slider img{
+    width:100%;
+}
+/*CSS PARA EL CONTENEDOR DE PRESENTACION*/
+#presentacion{
+    height:350px;
+    margin:auto;
+    width:100%;
+    display:flex;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primero{
+    width:70%;
+    justify-content: center;
+    padding: 5px 30px;
+}
+
+.primero h3{
+    -webkit-text-stroke: 2px rgb(10,150,183); /*Este de aca es el color del borde de las letras*/
+    -webkit-text-fill-color: rgb(138,190,175); /*Este de aca es el color de relleno*/
+    font-size: 25px;
+}
+.segundo{
+    width: 30%;
     box-sizing: border-box;
 }
 
-footer{
-    background-color: blue;
-    height: 50px;
-    color: white;
+#cuadro{
+    background-color: rgb(70, 137, 182);
+    height: 350px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#cuadro img{
+    height: 90%;
+    width: 75%;
+    box-sizing: border-box;
 }
 
- #cabecera{
-    background-image: url("animal.jpg");
-    text-align: center; 
-    color: rgba(208, 228, 34, 0.808);
-    background-size: 50vw 50vh;
-    height: 300px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
- }
+/*CSS PARA EL CONTENEDOR DE EXPLORA  preguntarle al profe lo de los errores*/
+#explorador{
+    width:1200px;
+    height: 200px;
+    background-color:red;
+    margin: 10px auto;
+}
+
+div.botones{
+    width:200px;
+    height: 200px;
+    float:left;
+    -webkit-transition: height .4s;
+}
+div#uno{
+    background: blue;
+}
+div#dos{
+    background: red;
+}
+div#tres{
+    background: yellow;
+}
+div#cuatro{
+    background: green;
+}
+div#cinco{
+    background: blue;
+}
+div#seis{
+    background:purple;
+}
+img.icono{
+    display:block;
+    margin:50px auto;
+    height:40px;
+    width: 20%;
+    background-color:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+    -webkit-transition: box-shadow 0.4s;
+}
+
+.botones p{
+    font-size:1.2em;
+    color:white;
+    text-align: center;
+    opacity:0.9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.botones:hover{
+    height: 219px;
+}
+
+div.botones:hover img.icono{
+    box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.6);
+}
+
+/*CSS PARA EL FOMULARIO DE REGISTRO*/
+/*ACA FALTA CSS Y CENTRAR EL BOTON*/
+form{
+    width:500px;
+    margin:auto;
+    padding:20px;
+    margin-top: 30px;
+    border:1px solid black;
+}
+form div{
+    margin:6px;
+}
+
+input{
+    width:100%;
+}
+
+input[type="submit"]{
+    width:30%;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-left:35%;
+    box-sizing: content-box;
+}
