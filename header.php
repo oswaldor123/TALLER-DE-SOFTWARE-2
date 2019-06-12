@@ -20,11 +20,11 @@
                                 <li><a href="#">Esterilización</a></li>
                             </ul>
                         </li>
-                        <li> <a href="#">Donaciones</a></li>
+                        <li> <a href="donaciones.php">Donaciones</a></li>
                         <li> <a href="#">Mi Cuenta</a>
                             <ul class="submenu">
-                                <li><a href="#">Iniciar Sesión</a></li>
-                                <li><a href="#">Crear Cuenta</a></li>
+                                <li><a href="login.php">Iniciar Sesión</a></li>
+                                <li><a href="registro.php">Crear Cuenta</a></li>
                                 <li><a href="#">Actualizar datos</a></li>
                                 <li><a href="#">Cerrar Sesión</a></li>
                             </ul>

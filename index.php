@@ -27,7 +27,7 @@
             </li>
         </ul>
     </div>
-    <div id="presentacion">
+    <div class="presentacion">
         <div class="primero">
             <h3>¿Quiénes somos?</h3>
             <p>
@@ -48,39 +48,48 @@
             </p>
         </div>
         <div class="segundo">
-            <div id="cuadro">
+            <div class="cuadro">
                 <img src="imagenes/amigo2.png" alt="" height="70px">
             </div>
         </div>
     </div>
-    <div id="explorador">
-        <div class="botones" id="uno">
-            <img src="imagenes/registr.png" class="icono">
-            <p>Registrar Mascota</p>
-        </div>
-        <div class="botones" id="dos">
-            <img src="imagenes/adopta.png" class="icono">
-            <p>Adopta</p>
-        </div>
-        <div class="botones" id="tres">
-            <img src="imagenes/se busca.png" class="icono">
-            <p>Se Busca</p> 
-        </div>
-        <div class="botones" id="cuatro">
-            <img src="imagenes/veterinario.png" class="icono">
-            <p>Veterinario</p> 
-        </div>
-        <div class="botones" id="cinco">
-            <img src="imagenes/esterilizacion.png" class="icono">
-            <p>Esterilización</p>  
-        </div>
-        <div class="botones" id="seis">
-            <img src="imagenes/donacion.png"  class="icono">
-            <p>Donaciones</p>
-        </div>
+    <div class="explorador">
+        <a href="#">
+            <div class="botones" id="uno">
+                <img src="imagenes/registr.png" class="icono">
+                <p>Registrar Mascota</p>
+            </div>
+        </a>
+        <a href="#"></a>
+            <div class="botones" id="dos">
+                <img src="imagenes/adopta.png" class="icono">
+                <p>Adopta</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="botones" id="tres">
+                <img src="imagenes/se busca.png" class="icono">
+                <p>Se Busca</p> 
+            </div>
+        </a>
+        <a href="#">
+            <div class="botones" id="cuatro">
+                <img src="imagenes/veterinario.png" class="icono">
+                <p>Veterinario</p> 
+            </div>
+        </a>
+        <a href="">
+            <div class="botones" id="cinco">
+                <img src="imagenes/esterilizacion.png" class="icono">
+                <p>Esterilización</p>  
+            </div>
+        </a>
+        <a href="donaciones.php">
+            <div class="botones" id="seis">
+                <img src="imagenes/donacion.png"  class="icono">
+                <p>Donaciones</p>
+            </div>
+        </a>
     </div>
-    <?php
-        include ("footer.php");
-    ?>
 </body>
 </html>
