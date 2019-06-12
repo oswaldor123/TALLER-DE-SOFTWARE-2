@@ -11,7 +11,7 @@
                         <li> <a href="#">Servicios</a>
                             <ul class="submenu">
                                 <li><a href="#">Adopta</a></li>
-                                <li><a href="#">Registra</a></li>
+                                <li><a href="registrarperro.php">Registra</a></li>
                             </ul>
                         </li>
                         <li> <a href="#">Salud</a>

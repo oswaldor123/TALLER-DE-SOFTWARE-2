@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="hojita.css">
 </head>
 <body>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="explorador">
-        <a href="#">
+        <a href="registrarperro.php">
             <div class="botones" id="uno">
                 <img src="imagenes/registr.png" class="icono">
                 <p>Registrar Mascota</p>
