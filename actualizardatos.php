@@ -30,6 +30,9 @@
             <input type="password" name="contra" id="contra" REQUIRED placeholder="Contraseña">
         </div>
         <input type="submit" value="Actualizar Datos">
+        <div>
+        
+        </div>
     </form>
     </form>
 </body>
