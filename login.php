@@ -12,17 +12,27 @@
     include ("header.php");
     ?>
     <form action="procesar_login.php" method="POST">
+    <h2>Iniciar Sesión</h2>
+        <?php
+        if(isset($_GET["error1"])) { ?>
+            <p color="red">NO COINCIDEN LOS DATOS >:V</p>
+        <?php }
+        ?>
         <div>
             <label for=""></label>
-            <input type="text">
+            <input type="email" name="correo" id="correo" placeholder="Correo" REQUIERED>
         </div>
         <div>
             <label for=""></label>
-            <input type="text">
+            <input type="text" name="contra" id="contra" placeholder="Contraseña"REQUIERED>
         </div>
         <div>
             <input type="submit" value="Iniciar Sessión">
         </div>
+        <div>
+            <p>¿No tienes cuenta?, haz click <a href="registro.php">aquí</a></p>
+        </div>
     </form>
+
 </body>
 </html>

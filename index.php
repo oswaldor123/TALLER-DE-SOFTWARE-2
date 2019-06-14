@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,13 +78,13 @@
                 <p>Registrar Mascota</p>
             </div>
         </a>
-        <a href="#"></a>
+        <a href="adoptar.php">
             <div class="botones" id="dos">
                 <img src="imagenes/adopta.png" class="icono">
                 <p>Adopta</p>
             </div>
         </a>
-        <a href="#">
+        <a href="sebusca.php">
             <div class="botones" id="tres">
                 <img src="imagenes/se busca.png" class="icono">
                 <p>Se Busca</p> 

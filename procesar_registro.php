@@ -7,9 +7,9 @@ $dni=$_POST['dni'];
 $tfono=$_POST['tfono'];
 $contra=$_POST['contra'];
 
-$pdo=new PDO("mysql:host=localhost;dbname=happy feet;charset=utf8","root","");
-
-$sql="INSERT INTO usuario values (null,'$nombre','$apellidop','$apellidom','$correo','$dni','$tfono','$contra')";
+include ("conexion.php");
+$co=sha1($contra);
+$sql="INSERT INTO usuario values (null,'$nombre','$apellidop','$apellidom','$correo','$dni','$tfono','$co')";
 
 $pdo->query($sql);
 
