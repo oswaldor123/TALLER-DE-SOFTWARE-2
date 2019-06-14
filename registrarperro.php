@@ -83,8 +83,8 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         <div>
         <label for="tipo">Tipo de Registro</label>
             <select name="tipo" id="tipo" placeholder="Elija una opción">
-                <option value="se busca">Se Busca</option>
-                <option value="para adoptar">Para Adoptar</option>
+                <option value="Se Busca">Se Busca</option>
+                <option value="Para Adoptar">Para Adoptar</option>
             </select>
         </div>
         <div>

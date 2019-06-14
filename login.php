@@ -24,7 +24,7 @@
         </div>
         <div>
             <label for=""></label>
-            <input type="text" name="contra" id="contra" placeholder="Contraseña"REQUIERED>
+            <input type="password" name="contra" id="contra" placeholder="Contraseña"REQUIERED>
         </div>
         <div>
             <input type="submit" value="Iniciar Sessión">

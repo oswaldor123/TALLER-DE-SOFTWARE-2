@@ -1,6 +1,6 @@
 <?php
     include("conexion.php");
-    $sql=$pdo->query("SELECT * FROM perro WHERE tipo='para adoptar'");
+    $sql=$pdo->query("SELECT * FROM perro WHERE tipo='Para Adoptar'");
     $u=$sql->fetchAll();
 ?>
 <!DOCTYPE html>
