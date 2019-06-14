@@ -28,7 +28,11 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         edad
         fecharegistro
         foto-->
-    <form action="" method="POST" id="tabla">
+    <form action="procesar_registro_perro.php" method="POST" id="tabla" enctype="multipart/form-data">
+    <div>
+            <label for="nombre">Escribe su nombre</label>
+            <input type="text" name="nombre" id="nombre" REQUIERED placeholder="Nombre del can">
+        </div>
         <div>
             <label for="ubicacion">¿Donde lo encontró?</label>
             <input type="text" name="ubicacion" id="ubicacion" REQUIERED placeholder="Distrito">
@@ -36,8 +40,8 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         <div>
             <label for="genero">Género</label>
             <select name="genero" id="genero" placeholder="Elija su opción">
-                <option value="MA">Macho</option>
-                <option value="HE">Hembra</option>
+                <option value="MACHO">Macho</option>
+                <option value="HEMBRA">Hembra</option>
             </select>
         </div>
         <div>
@@ -65,18 +69,23 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         </div>
         <div>
             <label for="esterilizado">Esterilizado</label>
-            <select name="genero" id="genero" placeholder="Elija su opción">
+            <select name="esterilizado" id="esterilizado" placeholder="Elija una opción">
                 <option value=""></option>
-                <option value="s">SI</option>
-                <option value="n">NO</option>
-                <option value="DE">desconozco</option>
+                <option value="SI">SI</option>
+                <option value="NO">NO</option>
+                <option value="NO SE">desconozco</option>
             </select>
         </div>
         <div>
             <label for="foto">Foto</label>
+            <input type="file" name="imagen" id="imagen">
         </div>
         <div>
-            <input type="hidden" name="fecharegistro" value=$fecha>
+        <label for="tipo">Tipo de Registro</label>
+            <select name="tipo" id="tipo" placeholder="Elija una opción">
+                <option value="se busca">Se Busca</option>
+                <option value="para adoptar">Para Adoptar</option>
+            </select>
         </div>
         <div>
             <input type="submit" value="Registrar Perro">

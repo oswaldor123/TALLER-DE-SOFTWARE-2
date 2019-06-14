@@ -1,3 +1,8 @@
+<?php
+    include("conexion.php");
+    $sql=$pdo->query("SELECT * FROM perro WHERE tipo='para adoptar'");
+    $u=$sql->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +24,22 @@
          <p id="frase">
                 "Si nunca haz tenido un perro, no sabrás lo que es que te<br> den cariño sin pedirte nada a cambio."
         </p>
-
     </div>
     <div class="segundo">
             <div class="cuadro">
                 <img src="imagenes/perroplato.png" alt="">
             </div>
         </div>
+    </div>
+    <?php
+    foreach ($u as $v) { ?>
+       <p>nombre:<?php echo $v['nombre'] ?></p>
+       <p>Genero:<?php echo $v['genero'] ?></p>
+       <p>Edad:<?php echo $v['edad'] ?></p>
+       <p>Tamaño:<?php echo $v['tamaño'] ?></p>
+       <img src="data:image/jpg;base64,<?php echo base64_encode($v['foto']);?>" alt="">
+    <?php } ?>
+    <div>
     </div>
 </body>
 </html>
