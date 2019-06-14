@@ -24,10 +24,15 @@
                         <li> <a href="donaciones.php">Donaciones</a></li>
                         <li> <a href="#">Mi Cuenta</a>
                             <ul class="submenu">
-                                <li><a href="login.php">Iniciar Sesión</a></li>
-                                <li><a href="registro.php">Crear Cuenta</a></li>
-                                <li><a href="actualizardatos.php">Actualizar datos</a></li>
-                                <li><a href="#">Cerrar Sesión</a></li>
+                        <?php
+                        if(isset($_SESSION["correo"])) { ?>
+                            
+                            <li><a href="actualizardatos.php">Actualizar datos</a></li>
+                            <li><a href="logout.php">Cerrar Sesión</a></li>
+                        <?php } else { ?>
+                            <li><a href="login.php">Iniciar Sesión</a></li>
+                            <li><a href="registro.php">Crear Cuenta</a></li>
+                        <?php } ?>
                             </ul>
                         </li>
                     </ul>

@@ -10,11 +10,12 @@
 <body>
     <?php
         include ("header.php");
+        include ("conexion.php");
     ?>
     <form action="procesar_registro.php" method="post">
         <h1>Registrar </h1>
         <div>
-            <input type="text" name="nombre" id="nombre" REQUIRED placeholder="Nombre" pattern="[A-Za-z]+">
+            <input type="text" name="nombre" id="nombre" REQUIRED placeholder="Nombre">
         </div>
         <div>
             <input type="text" name="apellido1" id="apellido1" REQUIRED placeholder="Apellido" pattern="[A-Za-z]+">

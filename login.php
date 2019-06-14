@@ -13,6 +13,11 @@
     ?>
     <form action="procesar_login.php" method="POST">
     <h2>Iniciar Sesión</h2>
+        <?php
+        if(isset($_GET["error1"])) { ?>
+            <p color="red">NO COINCIDEN LOS DATOS >:V</p>
+        <?php }
+        ?>
         <div>
             <label for=""></label>
             <input type="email" name="correo" id="correo" placeholder="Correo" REQUIERED>
