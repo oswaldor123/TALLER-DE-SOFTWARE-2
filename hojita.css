@@ -210,6 +210,7 @@ form{
     margin-top: 30px;
     border:1px solid black;
 }
+
 form div{
     margin:6px;
 }
@@ -287,4 +288,16 @@ div.boton:hover{
 
 div.boton:hover img.icon{
     box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.6);
+}
+/*Para Veterinario*/
+.cuadro2 img{
+    height: 90%;
+    width: 80%;
+    box-sizing: border-box;
+}
+#vete{
+    margin-left: 50px;
+}
+#vet{
+    margin:auto;
 }

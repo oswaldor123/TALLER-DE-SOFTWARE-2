@@ -19,8 +19,7 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         <h3>¿Quieres traer un perro a nuestro albergue?</h3>
         <p>Estamos capacitados para recibir a cualquier raza de perros, si tienes conocimiento 
             de algún animal que la esta pasando mal, no dudes en registrarla acá. Para ello, llena 
-            el siguiente formulario.
-        </p>
+            el siguiente formulario.</p>
     </div>
     <!-- Los datos para registrar perro son:
         id
@@ -42,6 +41,7 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
             </select>
         </div>
         <div>
+            <button>Subir Foto</button>
             <label for="foto">Foto</label>
         </div>
         <div>

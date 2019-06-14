@@ -16,8 +16,8 @@
                         </li>
                         <li> <a href="#">Salud</a>
                             <ul class="submenu">
-                                <li><a href="#">Veterinario</a></li>
-                                <li><a href="#">Esterilización</a></li>
+                                <li><a href="veterinario.php">Veterinario</a></li>
+                                <li><a href="esterilizacion.php">Esterilización</a></li>
                             </ul>
                         </li>
                         <li> <a href="donaciones.php">Donaciones</a></li>

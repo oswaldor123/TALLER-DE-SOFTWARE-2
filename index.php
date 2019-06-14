@@ -46,6 +46,21 @@
                 ayudar a todos aquellos animales que se encuentren sin hogar, 
                 brindándoles los cuidados adecuados hasta que encuentren una familia.
             </p>
+            <h3>Organizaciones que nos apoyan</h3>
+            <table>
+                <tr>
+                    <th>Patitas de Amor</th>
+                    <th>A.P.A.D.A.C</th>
+                    <th>Arca de Noé</th>
+                    <th>Amigos del Perro</th>
+                </tr>
+                <tr>
+                    <td><img src="imganes/patitas_de_amor.png" alt="" height="100px"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
         <div class="segundo">
             <div class="cuadro">
