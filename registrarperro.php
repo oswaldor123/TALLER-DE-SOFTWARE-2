@@ -20,8 +20,12 @@ session_start();
         <h3 id="gaa">¿Quieres traer un perro a nuestro albergue?</h3>
         <p id="gaa1">Estamos capacitados para recibir a cualquier raza de perros, si tienes conocimiento 
             de algún animal que la esta pasando mal, no dudes en registrarla acá. Para ello, llena 
+<<<<<<< HEAD
+            el siguiente formulario.</p>
+=======
             el siguiente formulario y marca la opcion para adoptar para registrar al perro en el albergue.
         </p>
+>>>>>>> 8d0dffa9468c2e5fb5ea12a98265c704ef4615a8
     </div>
     <h3 id="gaaa">¿se te ha perdido una mascota?</h3>
     <p id="gaaa1">como forma de ayudar a la comunidad HF brinda la oportunidad de registrar una mascota perdida
@@ -73,6 +77,9 @@ session_start();
             </select>
         </div>
         <div>
+<<<<<<< HEAD
+            <button>Subir Foto</button>
+=======
             <label for="esterilizado">Esterilizado</label>
             <select name="esterilizado" id="esterilizado" placeholder="Elija una opción">
                 <option value=""></option>
@@ -82,10 +89,14 @@ session_start();
             </select>
         </div>
         <div>
+<<<<<<< HEAD
             <label for="">Télefono</label>
             <input type="number" name="tfono" id="tfono" placeholder="Teléfono">
         </div>
         <div>
+=======
+>>>>>>> e2aae61ff9288d52bb469b5dea597257f9f3f10e
+>>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
             <label for="foto">Foto</label>
             <input type="file" name="imagen" id="imagen">
         </div>

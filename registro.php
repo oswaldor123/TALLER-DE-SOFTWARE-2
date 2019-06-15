@@ -13,13 +13,16 @@
         include ("conexion.php");
     ?>
     <form action="procesar_registro.php" method="post">
+        <center>
+        <img src="imagenes/logohf.png" alt="" width="100px">
         <h1>Registrar </h1>
+        </center>
         <div>
             <input type="text" name="nombre" id="nombre" REQUIRED placeholder="Nombre">
         </div>
         <div>
-            <input type="text" name="apellido1" id="apellido1" REQUIRED placeholder="Apellido" pattern="[A-Za-z]+">
-            <input type="text" name="apellido2" id="apellido2" REQUIRED placeholder="Apellido" pattern="[A-Za-z]+">
+            <input type="text" name="apellido1" id="apellido1" REQUIRED placeholder="Apellido Materno" pattern="[A-Za-z]+">
+            <input type="text" name="apellido2" id="apellido2" REQUIRED placeholder="Apellido Paterno" pattern="[A-Za-z]+">
         </div>
         <div>
             <input type="email" name="correo" id="correo" REQUIRED placeholder="ejemplo@ejemplo.com">

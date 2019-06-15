@@ -1,28 +1,16 @@
-<<<<<<< HEAD
-<?php
-session_start();
-?>
-=======
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <link rel="stylesheet" href="hojita.css">
 
 </head>
-=======
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="hojita.css">
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
 <body>
 <?php  
     include ("header.php");
 ?>
-<<<<<<< HEAD
 <h3>Esterilizacion</h3>
 <p>Se recomienda esterilizar a su perro, reduciendo problemas como cancer de mama en las hembras y
     problemas de prostata en los machos.
@@ -31,15 +19,27 @@ session_start();
 </p>
 <p>Si quiere esterilizar a su mascota tiene que separa con tiempo  para confirmar la 
     disponibilidad del veterinario</p>
-<form action="registrarcita.php" method="POST">
+<form action="" method="POST">
+
+<h4>Sobre el dueño</h4>
+    <div>
+        <label for="unom">Nombre de Usuario</label>
+        <input type="text" name="unom" id="unom"  REQUIERED placeholder="Obligatorio">
+    </div>
+
+    <div>
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" id="dni"  REQUIERED placeholder="Documento de Identidad">
+    </div>
+
 <h4>Sobre la mascota</h4>
     <div>
         <label for="pnom">Nombre del Perro</label>
-        <input type="text" name="pnom" id="pnom" REQUIERED placeholder="Nombre del Perro">
+        <input type="text" name="pnom" id="pnom" REQUIERED placeholder="Obligatiorio">
     </div>
     <div>
         <label for="raza">Raza: </label>
-        <select name="raza" id="raza" disable>
+        <select name="razas" id="razas" disable>
             <option value="" selected>Todos</option>
             <option value="NS">Sin Especificar</option>
             <option value="Mestizo">Mestizo</option>
@@ -85,87 +85,43 @@ session_start();
     </div>
     
     <div>
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" id="edad"  REQUIERED placeholder="Edad" max="18">
+        <label for="edad_esteril">Edad:</label>
+        <input type="text" name="edad_esteril" id="edad_esteril"  REQUIERED placeholder="Edad">
     </div>
 
 <h4>Seleccione fecha y hora de la operacion</h4>
     <div>
-        <input type="hidden" name="dueño" value="<?php echo $_SESSION["nombre"]?>">
-    </div>
-    <div>
         <div>
-            <label for="dias">Días</label>
-            <select name="dias" id="dias">
-                <option value="Lunes">Lunes</option>    
-                <option value="Martes">Martes</option>
-                <option value="Miercoles">Miércoles</option>
-                <option value="Jueves">Jueves</option>    
-                <option value="Viernes">Viernes</option>
-                <option value="Sábado">Sábado</option>
-                <option value="Domingo">Domingo</option>
+            <label for="ls">Lunes a Sabado</label>
+            <select name="ls" id="ls">
+                <option value="" REQUIERED></option>    
+                <option value="dia">09 a.m - 11 a.m</option>
+                <option value="tarde">15 p.m - 17 p.m</option>
             </select>
         </div>
+        
         <div>
-            <label for="horas">Horas</label>
-            <select name="horas" id="horas">
-                <option value="08 a.m - 10 a.m">08 a.m - 10 a.m</option>
-                <option value="02 p.m - 6 p.m">02 p.m - 6 p.m</option>
-                <option value="6 a.m - 10 p.m">6 a.m - 10 p.m</option>
-            </select>
+            <label for="do">Domingo</label>
+            <select name="do" id="do">
+            <option value="" REQUIERED></option>    
+            <option value="dia">08 a.m - 10 a.m</option>
+
         </div>
     </div>
-        <label for="tipo">Tipo de Consulta:</label>
-        <select name="tipo" id="tipo">
-                <option value="Veterinario">Veterinario</option>
-                <option value="Esterilización">Esterilización</option>
-        </select>
+
     <div>
+        <label for="fecha">Fecha de operacion: </label>
+        <input type="date">
     </div>
+
     <div>
-        <input type="submit" value="Registrar Cita">
+        <label for="hora">Hora de operacion</label>
+        <input type="time">
+    </div>
+
+    <div>
+        <input type="submit" value="Registrar Esterilizacion">
     </div>
 </form>
 </body>
 </html>
-=======
-<h3 id="vete">Veterinario</h3>
-<div class="present">
-    <p id="pre">Happy Feet cuenta con servicio de veterinario, conformado por medicos profesionales 
-    al mando, cumplen con dar un rapido auxilio hacia nusetros perros. </p>
-    <div class="segundo">
-        <div class="cuadro2">
-            <img id="vet" src="imagenes/veterinaria.png" alt="">
-        </div>
-    </div>
-</div>
-<form action="POST" id="tabla">
-    <div>
-        <label for="unom">Nombre de Usuario</label>
-        <input type="text" name="unom" id="unom"  REQUIERED placeholder="Obligatorio">
-    </div>
-
-    <div>
-        <label for="uape">Apellido de Usuario</label>
-        <input type="text" name="uape" id="uape"  REQUIERED placeholder="Obligatorio">
-    </div>
-
-    <div>
-        <label for="utfono">Telefono de Usuario</label>
-        <input type="text" name="utfono" id="utfono" REQUIRED placeholder="Teléfono" patternpattern="[0-9]+">
-    </div>
-
-    <div>
-        <label for="horario">Horarios de atencion</label>
-        <p> De 13 a 14 p.m y de 17 a 18 p.m estamos en descanso</p>
-        <select name="horario" id="horario">
-            <option value="Dia">06:00 a.m -13:00 p.m</option>
-            <option value="Tarde">14:00 p.m - 17:00 p.m </option>
-            <option value="Noche">18:00 p.m - 21:00 p.m </option>
-        </select>
-    </div>
-</form>
-
-</body>
-</html>
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7

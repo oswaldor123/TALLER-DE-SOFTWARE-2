@@ -21,7 +21,16 @@
                             <?php } ?>
                             </ul>
                         </li>
+<<<<<<< HEAD
                         <li> <a href="veterinario.php">Salud</a>
+=======
+                        <li> <a href="#">Salud</a>
+                            <ul class="submenu">
+                                <li><a href="veterinario.php">Veterinario</a></li>
+                                <li><a href="esterilizacion.php">Esterilización</a></li>
+                            </ul>
+                        </li>
+>>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
                         <li> <a href="donaciones.php">Donaciones</a></li>
                         <li> <a href="#">Mi Cuenta</a>
                             <ul class="submenu">
