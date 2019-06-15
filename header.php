@@ -28,6 +28,7 @@
                         if(isset($_SESSION["correo"])) { ?>
                             
                             <li><a href="actualizardatos.php">Actualizar datos</a></li>
+                            <li><a href="#">Mis Reservaciones</a></li>
                             <li><a href="logout.php">Cerrar Sesión</a></li>
                         <?php } else { ?>
                             <li><a href="login.php">Iniciar Sesión</a></li>

@@ -2,6 +2,7 @@
     include("conexion.php");
     $sql=$pdo->query("SELECT * FROM perro WHERE tipo='Para Adoptar'");
     $u=$sql->fetchAll();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set("America/Lima"); /*ESTO ES PARA ESTABLECER ZONA HORARIA*/
 $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

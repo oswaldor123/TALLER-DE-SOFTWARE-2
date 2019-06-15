@@ -14,6 +14,7 @@ session_start();
     <?php
         include("header.php");
     ?>
+    <p>Hola <?php echo $_SESSION["nombre"], $_SESSION["apellido1"]?>, ¿Deseas actualizar tus datos?,llena el siguiente formulario: </p>
     <form action="procesar_actualizar.php" method="POST">
         <h1>Actualizar Datos</h1>
         <div>
@@ -31,6 +32,9 @@ session_start();
         </div>
         <div>
             <input type="password" name="contra" id="contra" REQUIRED placeholder="Contraseña">
+        </div>
+        <div>
+            <input type="hidden" name="id" value="<?php echo $_SESSION["id"]?>">
         </div>
         <input type="submit" value="Actualizar Datos">
     </form>
