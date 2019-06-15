@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-06-2019 a las 22:43:52
+-- Tiempo de generación: 15-06-2019 a las 23:19:39
 -- Versión del servidor: 10.3.15-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -32,15 +32,8 @@ CREATE TABLE `adopcion` (
   `id` int(11) NOT NULL,
   `nombreusuario` varchar(50) NOT NULL,
   `nombreperro` varchar(50) NOT NULL,
-  `fecha` date NOT NULL DEFAULT current_timestamp()
+  `fecha` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `adopcion`
---
-
-INSERT INTO `adopcion` (`id`, `nombreusuario`, `nombreperro`, `fecha`) VALUES
-(4, 'Carlos  ', 'Oswaldo', '2019-06-15');
 
 -- --------------------------------------------------------
 
