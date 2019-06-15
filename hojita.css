@@ -289,19 +289,6 @@ div.boton:hover{
 div.boton:hover img.icon{
     box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.6);
 }
-<<<<<<< HEAD
-/*Para Veterinario*/
-.cuadro2 img{
-    height: 90%;
-    width: 80%;
-    box-sizing: border-box;
-}
-#vete{
-    margin-left: 50px;
-}
-#vet{
-    margin:auto;
-=======
 /*CSS PARA PARA SEBUSCA*/
 .presentación-inverso{
     height:350px;
@@ -332,6 +319,7 @@ div.boton:hover img.icon{
     width: 75%;
     box-sizing: border-box;
 }
+/* Apartir de aqui esta lo mio */
 #gaa{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 40px;
@@ -347,10 +335,21 @@ div.boton:hover img.icon{
     
 }
 #tabla{
-    margin-top: -170px;
+    margin-top: -10cm;
 }
 #imagenp{
     margin-left: 40px;
     margin-top: -90px;
->>>>>>> e2aae61ff9288d52bb469b5dea597257f9f3f10e
+}
+#vet{
+    margin-right: 20cm;
+    margin-top: 1cm;
+}
+#present{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-right: 100cm;
+}
+#pre{
+    margin-right: 20cm;
 }

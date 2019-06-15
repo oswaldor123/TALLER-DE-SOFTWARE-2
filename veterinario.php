@@ -11,16 +11,16 @@
     include ("header.php");
 ?>
 <h3 id="vete">Veterinario</h3>
-<div class="presentacion">
-    <p>Happy Feet cuenta con servicio de veterinario, conformado por medicos profesionales 
-    al mando, cumplen con dar un rapido axilio hacia nusetros perros. </p>
+<div class="present">
+    <p id="pre">Happy Feet cuenta con servicio de veterinario, conformado por medicos profesionales 
+    al mando, cumplen con dar un rapido auxilio hacia nusetros perros. </p>
     <div class="segundo">
         <div class="cuadro2">
             <img id="vet" src="imagenes/veterinaria.png" alt="">
         </div>
     </div>
 </div>
-<form action="POST">
+<form action="POST" id="tabla">
     <div>
         <label for="unom">Nombre de Usuario</label>
         <input type="text" name="unom" id="unom"  REQUIERED placeholder="Obligatorio">
@@ -46,16 +46,6 @@
         </select>
     </div>
 </form>
-
-Id (automatico)
-Hidden:nombreusuario
-Hidden:apellido
-Hiden:telefonousuario
-Hidden:dbi
-Hidden:dia y hora registri
-Y tmb que pida que dia y a que hora irias a la consulta
-<!-- Como veterinaria que servicios damos?-->
-
 
 </body>
 </html>
