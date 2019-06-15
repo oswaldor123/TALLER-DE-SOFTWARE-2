@@ -333,9 +333,31 @@ div.boton:hover img.icon{
     
 }
 #tabla{
-    margin-top: -170px;
+    margin-top: -100px;
 }
 #imagenp{
+    margin-left: 20px;
+    margin-top: -150px;
+}
+#gaaa{
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 40px;
-    margin-top: -90px;
+    -webkit-text-stroke: 2px rgb(10,150,183); /*Este de aca es el color del borde de las letras*/
+    -webkit-text-fill-color: rgb(138,190,175); /*Este de aca es el color de relleno*/
+    font-size: 25px;
+    width:20%;
+    margin-left: 27cm;
+    margin-top: -5cm;
+}
+#gaaa1{
+    width: 20%;
+    float:right;
+    margin-right:60px;
+    text-align: justify;
+    margin-top: -20px;
+}
+#imagenp1{
+    margin-left: 570px;
+    margin-top: -200px;
+    height: 300px;
 }

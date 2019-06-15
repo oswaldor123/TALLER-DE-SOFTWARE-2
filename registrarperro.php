@@ -20,9 +20,13 @@ session_start();
         <h3 id="gaa">¿Quieres traer un perro a nuestro albergue?</h3>
         <p id="gaa1">Estamos capacitados para recibir a cualquier raza de perros, si tienes conocimiento 
             de algún animal que la esta pasando mal, no dudes en registrarla acá. Para ello, llena 
-            el siguiente formulario.
+            el siguiente formulario y marca la opcion para adoptar para registrar al perro en el albergue.
         </p>
     </div>
+    <h3 id="gaaa">¿se te ha perdido una mascota?</h3>
+    <p id="gaaa1">como forma de ayudar a la comunidad HF brinda la oportunidad de registrar una mascota perdida
+    para que nos ayudemos entre nosotros a encontrar ese mienbro de la familia que falta. Llena el siguiente
+    formulario y marca la opcion se busca para identificar que es una mascota perdida</p>
     <!-- Los datos para registrar perro son:
         id
         donde lo encontro
@@ -93,5 +97,7 @@ session_start();
         </div>
     </form>
     <img src="imagenes/perrito.png" height="350px" width="27%" id="imagenp">
+    <img src="imagenes/perros1.png" width="27%" id="imagenp1">
+    
 </body>
 </html>
