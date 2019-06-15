@@ -22,7 +22,7 @@
         <h3>¿Los haz visto?</h3>
         <p>A continuación les presentamos una lista de amigos perdidos, sus familias los extrañan mucho, si haz ubicado a uno, aprovecha
         los datos de  contacto y devuelve la sonrisa a una familia.</p>
-        <p>En caso contrario, si haz pérdido a ese amigo especial y quieres ayuda de la familia HF para encontrarlo haz click <a href="">acá</a></p>
+        <p>En caso contrario, si haz pérdido a ese amigo especial y quieres ayuda de la familia HF para encontrarlo haz click <a href="registrarperro.php">acá</a></p>
     </div>
     </div>
 </body>

@@ -35,7 +35,7 @@ session_start();
             <input type="text" name="nombre" id="nombre" REQUIERED placeholder="Nombre del can">
         </div>
         <div>
-            <label for="ubicacion">¿Donde lo encontró?</label>
+            <label for="ubicacion">¿Donde lo encontró/perdió?</label>
             <input type="text" name="ubicacion" id="ubicacion" REQUIERED placeholder="Distrito">
         </div>
         <div>
@@ -53,19 +53,19 @@ session_start();
             <label for="tamaño">Tamaño</label>
             <select name="tamaño" id="tamaño">
                 <option value=""></option>
-                <option value="cachorro">Mini(hasta 5kg)</option>
-                <option value="joven">Chico(6-10kg)</option>
-                <option value="maduro">Mediano(11-25kg)</option>
-                <option value="grande">Grande(26-35kg)</option>
-                <option value="gigante">Gigante(mas de 36kg)</option>
+                <option value="Cachorro">Mini(hasta 5kg)</option>
+                <option value="Joven">Chico(6-10kg)</option>
+                <option value="Maduro">Mediano(11-25kg)</option>
+                <option value="Grande">Grande(26-35kg)</option>
+                <option value="Gigante">Gigante(mas de 36kg)</option>
             </select>
         </div>
         <div>
             <label for="edadp">Seleccione edad del can:</label>
             <select name="edadp" id="edadp">
-                <option value="cachorro">Cachorro</option>
-                <option value="joven">Joven</option>
-                <option value="maduro">Maduro</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Joven">Joven</option>
+                <option value="Maduro">Maduro</option>
             </select>
         </div>
         <div>
@@ -74,7 +74,7 @@ session_start();
                 <option value=""></option>
                 <option value="SI">SI</option>
                 <option value="NO">NO</option>
-                <option value="NO SE">desconozco</option>
+                <option value="NO SE">Desconozco</option>
             </select>
         </div>
         <div>
