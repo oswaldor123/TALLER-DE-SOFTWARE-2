@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set("America/Lima"); /*ESTO ES PARA ESTABLECER ZONA HORARIA*/
 $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +20,17 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         <h3 id="gaa">¿Quieres traer un perro a nuestro albergue?</h3>
         <p id="gaa1">Estamos capacitados para recibir a cualquier raza de perros, si tienes conocimiento 
             de algún animal que la esta pasando mal, no dudes en registrarla acá. Para ello, llena 
+<<<<<<< HEAD
             el siguiente formulario.</p>
+=======
+            el siguiente formulario y marca la opcion para adoptar para registrar al perro en el albergue.
+        </p>
+>>>>>>> 8d0dffa9468c2e5fb5ea12a98265c704ef4615a8
     </div>
+    <h3 id="gaaa">¿se te ha perdido una mascota?</h3>
+    <p id="gaaa1">como forma de ayudar a la comunidad HF brinda la oportunidad de registrar una mascota perdida
+    para que nos ayudemos entre nosotros a encontrar ese mienbro de la familia que falta. Llena el siguiente
+    formulario y marca la opcion se busca para identificar que es una mascota perdida</p>
     <!-- Los datos para registrar perro son:
         id
         donde lo encontro
@@ -33,7 +43,7 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
             <input type="text" name="nombre" id="nombre" REQUIERED placeholder="Nombre del can">
         </div>
         <div>
-            <label for="ubicacion">¿Donde lo encontró?</label>
+            <label for="ubicacion">¿Donde lo encontró/perdió?</label>
             <input type="text" name="ubicacion" id="ubicacion" REQUIERED placeholder="Distrito">
         </div>
         <div>
@@ -51,19 +61,19 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
             <label for="tamaño">Tamaño</label>
             <select name="tamaño" id="tamaño">
                 <option value=""></option>
-                <option value="cachorro">Mini(hasta 5kg)</option>
-                <option value="joven">Chico(6-10kg)</option>
-                <option value="maduro">Mediano(11-25kg)</option>
-                <option value="grande">Grande(26-35kg)</option>
-                <option value="gigante">Gigante(mas de 36kg)</option>
+                <option value="Cachorro">Mini(hasta 5kg)</option>
+                <option value="Joven">Chico(6-10kg)</option>
+                <option value="Maduro">Mediano(11-25kg)</option>
+                <option value="Grande">Grande(26-35kg)</option>
+                <option value="Gigante">Gigante(mas de 36kg)</option>
             </select>
         </div>
         <div>
             <label for="edadp">Seleccione edad del can:</label>
             <select name="edadp" id="edadp">
-                <option value="cachorro">Cachorro</option>
-                <option value="joven">Joven</option>
-                <option value="maduro">Maduro</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Joven">Joven</option>
+                <option value="Maduro">Maduro</option>
             </select>
         </div>
         <div>
@@ -75,7 +85,7 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
                 <option value=""></option>
                 <option value="SI">SI</option>
                 <option value="NO">NO</option>
-                <option value="NO SE">desconozco</option>
+                <option value="NO SE">Desconozco</option>
             </select>
         </div>
         <div>
@@ -86,8 +96,8 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         <div>
         <label for="tipo">Tipo de Registro</label>
             <select name="tipo" id="tipo" placeholder="Elija una opción">
-                <option value="se busca">Se Busca</option>
-                <option value="para adoptar">Para Adoptar</option>
+                <option value="Se Busca">Se Busca</option>
+                <option value="Para Adoptar">Para Adoptar</option>
             </select>
         </div>
         <div>
@@ -95,5 +105,7 @@ $fecha=date("d/n/y");/*Aca estamos creando la variable fecha*/
         </div>
     </form>
     <img src="imagenes/perrito.png" height="350px" width="27%" id="imagenp">
+    <img src="imagenes/perros1.png" width="27%" id="imagenp1">
+    
 </body>
 </html>

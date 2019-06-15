@@ -10,9 +10,15 @@
                         <li> <a href="index.php">Inicio</a></li>
                         <li> <a href="#">Servicios</a>
                             <ul class="submenu">
+                            <?php
+                            if(isset($_SESSION["correo"])) { ?>
                                 <li><a href="adoptar.php">Adopta</a></li>
                                 <li><a href="registrarperro.php">Registra</a></li>
                                 <li><a href="sebusca.php">Se Busca</a></li>
+                            <?php } else { ?>
+                                <li><a href="adoptar.php">Adopta</a></li>
+                                <li><a href="sebusca.php">Se Busca</a></li>
+                            <?php } ?>
                             </ul>
                         </li>
                         <li> <a href="#">Salud</a>
@@ -28,6 +34,7 @@
                         if(isset($_SESSION["correo"])) { ?>
                             
                             <li><a href="actualizardatos.php">Actualizar datos</a></li>
+                            <li><a href="#">Mis Reservaciones</a></li>
                             <li><a href="logout.php">Cerrar Sesión</a></li>
                         <?php } else { ?>
                             <li><a href="login.php">Iniciar Sesión</a></li>
