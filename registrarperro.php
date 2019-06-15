@@ -82,6 +82,10 @@ session_start();
             </select>
         </div>
         <div>
+            <label for="">Télefono</label>
+            <input type="number" name="tfono" id="tfono" placeholder="Teléfono">
+        </div>
+        <div>
             <label for="foto">Foto</label>
             <input type="file" name="imagen" id="imagen">
         </div>

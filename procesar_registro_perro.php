@@ -9,9 +9,10 @@
     $esterilizado=$_POST['esterilizado'];
     $nombre=$_POST['nombre'];
     $tipo=$_POST['tipo'];
+    $tfono=$_POST['tfono'];
     
     $sql="INSERT INTO perro values(null,'$nombre','$ubicacion','$genero','$color','$tamaño','$edadp','$esterilizado',
-    SYSDATE(),'$tipo','$imagen')";
+    SYSDATE(),'$tipo','$tfono','$imagen')";
 
     $pdo->query($sql);
 
