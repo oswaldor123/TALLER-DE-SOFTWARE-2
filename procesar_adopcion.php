@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION["nombre"])){
+    header("Location:adoptar.php");
+}else{
+    $id=$_POST['id'];
+    header("Location:confirmar.php?id=$id");
+}
+?>

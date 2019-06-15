@@ -13,7 +13,7 @@
         session_start();
             $_SESSION["correo"]=$usser["email"];
             $_SESSION["id"]=$usser["id"];
-            $_SESSION["tfono"]=$usser["tfono"];
+            $_SESSION["tfono"]=$usser["tfno"];
             $_SESSION["nombre"]=$usser["nombre"];
             $_SESSION["apellido1"]=$usser["apellido1"];
             $_SESSION["apellido2"]=$usser["apellido2"];

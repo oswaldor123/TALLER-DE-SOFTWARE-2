@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +34,7 @@ session_start();
         <div>
             <input type="password" name="contra" id="contra" REQUIRED placeholder="Contraseña">
         </div>
-        <div>
-            <input type="hidden" name="id" value="<?php echo $_SESSION["id"]?>">
-        </div>
+        <input type="hidden" name="id" value="<?php echo $_SESSION["id"] ?>" >
         <input type="submit" value="Actualizar Datos">
     </form>
     </form>
