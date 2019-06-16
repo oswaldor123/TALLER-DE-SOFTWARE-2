@@ -30,13 +30,17 @@
     </div>    
     <?php
     foreach ($u as $v) { ?>
-       <div>
-            <p>nombre:<?php echo $v['nombre'] ?></p>
-            <p>Genero:<?php echo $v['genero'] ?></p>
-            <p>Edad:<?php echo $v['edad'] ?></p>
-            <p>Tamaño:<?php echo $v['tamaño'] ?></p>
-            <p>Teléfono de dueño: <?php echo $v["tfono"] ?> </p>
-            <img src="data:image/jpg;base64,<?php echo base64_encode($v['foto']);?>" alt="">
+       <div class="perroperdido">
+            <div class="datosperro">
+                <p>Nombre: <?php echo $v['nombre'] ?></p>
+                <p>Género: <?php echo $v['genero'] ?></p>
+                <p>Edad: <?php echo $v['edad'] ?></p>
+                <p>Tamaño: <?php echo $v['tamaño'] ?></p>
+                <p>Teléfono de dueño: <?php echo $v["tfono"] ?> </p>
+            </div>
+            <div class="perroimagen">
+                <img src="data:image/jpg;base64,<?php echo base64_encode($v['foto']);?>" alt="">
+            </div>
        </div>
     <?php } ?>
 </body>

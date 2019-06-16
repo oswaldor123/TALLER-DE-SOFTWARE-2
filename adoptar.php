@@ -23,7 +23,7 @@
             <p>Acá te presentamos una variedad de perros que viven en nuestro albergue, conócelos a todos y si esta en tus posibilidades
             adopta a uno, se la familia que ellos tanto anhelan.</p>
             <p id="frase">
-                    "Si nunca haz tenido un perro, no sabrás lo que es que te<br> den cariño sin pedirte nada a cambio."
+                    "Si nunca has tenido un perro, no sabrás lo que es que te<br> den cariño sin pedirte nada a cambio."
             </p>
         </div>
         <div class="segundo">
@@ -34,16 +34,21 @@
     </div>
     <?php
     foreach ($u as $v) { ?>
-       <div>
-            <form action="procesar_adopcion.php" method="post">
-            <p>nombre:<?php echo $v['nombre'] ?></p>
-            <p>Genero:<?php echo $v['genero'] ?></p>
-            <p>Edad:<?php echo $v['edad'] ?></p>
-            <p>Tamaño:<?php echo $v['tamaño'] ?></p>
-            <img src="data:image/jpg;base64,<?php echo base64_encode($v['foto']);?>" alt="">
-            <input type="hidden" name="id" value=" <?php echo $v['id'] ?> ">
-            <input type="submit" value="Adóptame">
-            </form>
+       <div class="perroadopcion">
+           <div class="datosadoptar">
+                <form action="procesar_adopcion.php" method="post">
+                <p>Nombre: <?php echo $v['nombre'] ?></p>
+                <p>Género: <?php echo $v['genero'] ?></p>
+                <p>Edad: <?php echo $v['edad'] ?></p>
+                <p>Tamaño: <?php echo $v['tamaño'] ?></p>
+                <p>Encontrado en: <?php echo $v['ubicacion'] ?></p>
+                <input type="hidden" name="id" value=" <?php echo $v['id'] ?> ">
+                <input type="submit" value="Adóptame">
+                </form>
+            </div>
+            <div class="imagenadoptar">
+                <img src="data:image/jpg;base64, <?php echo base64_encode($v['foto']);?>" alt="">
+            </div>
        </div>
     <?php } ?>
 </body>
