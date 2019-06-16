@@ -1,28 +1,19 @@
-<<<<<<< HEAD
 <?php
 session_start();
 ?>
-=======
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <link rel="stylesheet" href="hojita.css">
 
 </head>
-=======
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="hojita.css">
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
 <body>
 <?php  
     include ("header.php");
 ?>
-<<<<<<< HEAD
 <h3>Esterilizacion</h3>
 <p>Se recomienda esterilizar a su perro, reduciendo problemas como cancer de mama en las hembras y
     problemas de prostata en los machos.
@@ -128,44 +119,3 @@ session_start();
 </form>
 </body>
 </html>
-=======
-<h3 id="vete">Veterinario</h3>
-<div class="present">
-    <p id="pre">Happy Feet cuenta con servicio de veterinario, conformado por medicos profesionales 
-    al mando, cumplen con dar un rapido auxilio hacia nusetros perros. </p>
-    <div class="segundo">
-        <div class="cuadro2">
-            <img id="vet" src="imagenes/veterinaria.png" alt="">
-        </div>
-    </div>
-</div>
-<form action="POST" id="tabla">
-    <div>
-        <label for="unom">Nombre de Usuario</label>
-        <input type="text" name="unom" id="unom"  REQUIERED placeholder="Obligatorio">
-    </div>
-
-    <div>
-        <label for="uape">Apellido de Usuario</label>
-        <input type="text" name="uape" id="uape"  REQUIERED placeholder="Obligatorio">
-    </div>
-
-    <div>
-        <label for="utfono">Telefono de Usuario</label>
-        <input type="text" name="utfono" id="utfono" REQUIRED placeholder="Teléfono" patternpattern="[0-9]+">
-    </div>
-
-    <div>
-        <label for="horario">Horarios de atencion</label>
-        <p> De 13 a 14 p.m y de 17 a 18 p.m estamos en descanso</p>
-        <select name="horario" id="horario">
-            <option value="Dia">06:00 a.m -13:00 p.m</option>
-            <option value="Tarde">14:00 p.m - 17:00 p.m </option>
-            <option value="Noche">18:00 p.m - 21:00 p.m </option>
-        </select>
-    </div>
-</form>
-
-</body>
-</html>
->>>>>>> 1240bc7c7a7e41a94966ec8741990ae9765f92c7
