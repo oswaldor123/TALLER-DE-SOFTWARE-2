@@ -57,12 +57,22 @@ session_start();
         </div>
     </div>
     <div class="explorador">
-        <a href="registrarperro.php">
-            <div class="botones" id="uno">
-                <img src="imagenes/registr.png" class="icono">
-                <p>Registrar Mascota</p>
-            </div>
-        </a>
+        <?php
+        if(isset($_SESSION["correo"])) { ?>
+            <a href="registrarperro.php">
+                <div class="botones" id="uno">
+                    <img src="imagenes/registr.png" class="icono">
+                    <p>Registrar Mascota</p>
+                </div>
+            </a>
+        <?php } else { ?>
+            <a href="login.php">
+                <div class="botones" id="uno">
+                    <img src="imagenes/registr.png" class="icono">
+                    <p>Registrar Mascota</p>
+                </div>
+            </a>
+        <?php } ?>
         <a href="adoptar.php">
             <div class="botones" id="dos">
                 <img src="imagenes/adopta.png" class="icono">
