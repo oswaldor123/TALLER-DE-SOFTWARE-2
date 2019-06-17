@@ -28,7 +28,7 @@
         </div>
         <div class="segundo">
                 <div class="cuadro">
-                    <img src="imagenes/perroplato.png" alt="">
+                    <img src="imagenes/perroplato.png" alt="" id="unico">
                 </div>
         </div>
     </div>

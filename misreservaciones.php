@@ -20,30 +20,44 @@
     <?php
         include("header.php")
     ?>
-    <div class="vet">
+    <div class="presentacion">
+        <div class="primero">
+            <h2 id="titulo">Mis Reservaciones</h2>
+            <p>Buenas <?php echo $_SESSION["nombre"] ?>, acá te mostramos las reservaciones de salud que haz realizado con nuestra web.</p>
+            <p>Si no haz realizado alguna haz click en el bóton Cancelar</p>
+        </div>
+        <div class="segundo">
+            <img src="imagenes/reservaciones.png" alt="" width="400px" id="unico">
+        </div>
+    </div>
+    <div class="cita">
+        <h4>Mis Citas Veterinarias</h4>
         <?php
         foreach ($smt1 as $fila) { ?>
-            <div>
+            <div class="factura">
                 <p>Dueño: <?php echo $fila['nombredueño']?> </p>
                 <p>Perro: <?php echo $fila['nombreperro']?> </p>
                 <p>Raza: <?php echo $fila['raza']?> </p>
-                <p>Edad: <?php echo $fila['edad']?> </p>
+                <p>Edad: <?php echo $fila['edad']?> años </p>
                 <p>Día: <?php echo $fila['dia']?> </p>
                 <p>Hora: <?php echo $fila['hora']?> </p>
+                <a href="cancelarcita.php?id=<?php echo $fila['id']?>">Cancelar Cita</a>
             </div>
         <?php } ?>
     </div>
-    <div class="esterlizar">
-    <?php
+    <div class="cita">
+        <h4>Para Esterilizar</h4>
+        <?php
         foreach ($smt2 as $fila) { ?>
-            <div>
-                <p>Dueño: <?php echo $fila['nombredueño']?> </p>
-                <p>Perro: <?php echo $fila['nombreperro']?> </p>
-                <p>Raza: <?php echo $fila['raza']?> </p>
-                <p>Edad: <?php echo $fila['edad']?> </p>
-                <p>Día: <?php echo $fila['dia']?> </p>
-                <p>Hora: <?php echo $fila['hora']?> </p>
-            </div>
+        <div class="factura">
+            <p>Dueño: <?php echo $fila['nombredueño']?> </p>
+            <p>Perro: <?php echo $fila['nombreperro']?> </p>
+            <p>Raza: <?php echo $fila['raza']?> </p>
+            <p>Edad: <?php echo $fila['edad']?> años </p>
+            <p>Día: <?php echo $fila['dia']?> </p>
+            <p>Hora: <?php echo $fila['hora']?> </p>
+            <a href="cancelarcita.php?id=<?php echo $fila['id']?>">Cancelar Cita</a>
+        </div>
         <?php } ?>   
     </div>
 </body>
