@@ -236,7 +236,7 @@ p#frase{
     display:flex;
 }
 div.boton{
-    width: 50%;
+    width: 400px;
     box-sizing:border-box;
     height: 300px;
     border: 1px solid white;

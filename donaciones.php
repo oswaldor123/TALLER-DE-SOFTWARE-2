@@ -34,14 +34,34 @@
     </div>
     <div>
     <div class="explora">
-        <div class="boton" id="voluntario">
+            <?php
+            if(isset($_SESSION["correo"])) { ?>
+            <a href="voluntariado.php">
+            <div class="boton" id="voluntario">
                 <img src="imagenes/voluntario.png" class="icon">
                 <p>Se un Voluntario</p>
             </div>
+            </a>
+            <a href="#">
             <div class="boton" id="donaciones">
                 <img src="imagenes/donar.png" class="icon">
                 <p>Donar Bienes</p>
             </div>
+            </a>
+            <?php } else { ?>
+                <a href="#">
+            <div class="boton" id="voluntario">
+                <img src="imagenes/voluntario.png" class="icon">
+                <p>Se un Voluntario</p>
+            </div>
+            </a>
+            <a href="#">
+            <div class="boton" id="donaciones">
+                <img src="imagenes/donar.png" class="icon">
+                <p>Donar Bienes</p>
+            </div>
+            </a>
+            <?php } ?>
         </div>
     </div>
 </body>
