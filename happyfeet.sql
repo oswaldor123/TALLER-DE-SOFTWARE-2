@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2019 a las 15:47:17
+-- Tiempo de generación: 18-06-2019 a las 18:08:28
 -- Versión del servidor: 10.3.15-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -107,7 +107,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `apellido1`, `apellido2`, `email`, `dni`, `tfno`, `contra`) VALUES
-(3, 'Carlos ', 'Pella', 'Chavez', 'carlos@hotmail.com', 72498083, 989599652, 'd775ac15f20fee1a5aa5a484117307c930882485');
+(3, 'Carlos ', 'Pella', 'Chavez', 'carlos@hotmail.com', 72498083, 989599652, 'd775ac15f20fee1a5aa5a484117307c930882485'),
+(4, 'Prueba', 'Prueba', 'Prueba', 'prueba@gmail.com', 98754123, 987654321, '711383a59fda05336fd2ccf70c8059d1523eb41a');
 
 -- --------------------------------------------------------
 
@@ -117,17 +118,11 @@ INSERT INTO `usuario` (`id`, `nombre`, `apellido1`, `apellido2`, `email`, `dni`,
 
 CREATE TABLE `voluntario` (
   `id` int(11) NOT NULL,
+  `idusuario` int(11) NOT NULL,
   `nombreusu` varchar(50) NOT NULL,
   `apellidousu` varchar(50) NOT NULL,
   `fecharegistro` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `voluntario`
---
-
-INSERT INTO `voluntario` (`id`, `nombreusu`, `apellidousu`, `fecharegistro`) VALUES
-(1, 'Carlos ', 'Pella', '2019-06-18');
 
 --
 -- Índices para tablas volcadas
@@ -189,13 +184,13 @@ ALTER TABLE `perroconsulta`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `voluntario`
 --
 ALTER TABLE `voluntario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
