@@ -432,3 +432,9 @@ div.boton:hover img.icon{
     padding-left: 10px;
     padding-bottom: 10px;
 }
+/* Css hora */
+#hora{
+    margin-right: 20%;
+    margin: auto;
+
+}

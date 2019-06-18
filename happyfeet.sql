@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2019 a las 18:08:28
--- Versión del servidor: 10.3.15-MariaDB
--- Versión de PHP: 7.3.6
+-- Tiempo de generación: 18-06-2019 a las 21:55:37
+-- Versión del servidor: 10.1.36-MariaDB
+-- Versión de PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -33,6 +33,22 @@ CREATE TABLE `adopcion` (
   `nombreusuario` varchar(50) NOT NULL,
   `nombreperro` varchar(50) NOT NULL,
   `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `bien`
+--
+
+CREATE TABLE `bien` (
+  `id` int(11) NOT NULL,
+  `nombreusu` varchar(50) NOT NULL,
+  `apellidousu` varchar(50) NOT NULL,
+  `tipo` varchar(6) NOT NULL,
+  `cantidad` int(100) NOT NULL,
+  `descripcion` int(200) NOT NULL,
+  `fecharegistro` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -135,6 +151,12 @@ ALTER TABLE `adopcion`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `bien`
+--
+ALTER TABLE `bien`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `perro`
 --
 ALTER TABLE `perro`
@@ -167,6 +189,12 @@ ALTER TABLE `voluntario`
 --
 ALTER TABLE `adopcion`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `bien`
+--
+ALTER TABLE `bien`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `perro`

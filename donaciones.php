@@ -42,7 +42,7 @@
                 <p>Se un Voluntario</p>
             </div>
             </a>
-            <a href="#">
+            <a href="bienes.php">
             <div class="boton" id="donaciones">
                 <img src="imagenes/donar.png" class="icon">
                 <p>Donar Bienes</p>
