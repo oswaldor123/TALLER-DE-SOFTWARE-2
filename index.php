@@ -85,13 +85,13 @@ session_start();
                 <p>Se Busca</p> 
             </div>
         </a>
-        <a href="#">
+        <a href="veterinario.php">
             <div class="botones" id="cuatro">
                 <img src="imagenes/veterinario.png" class="icono">
                 <p>Veterinario</p> 
             </div>
         </a>
-        <a href="">
+        <a href="veterinario.php">
             <div class="botones" id="cinco">
                 <img src="imagenes/esterilizacion.png" class="icono">
                 <p>Esterilización</p>  

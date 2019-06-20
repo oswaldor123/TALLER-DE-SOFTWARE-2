@@ -36,6 +36,7 @@
                 <p>Género: <?php echo $v['genero'] ?></p>
                 <p>Edad: <?php echo $v['edad'] ?></p>
                 <p>Tamaño: <?php echo $v['tamaño'] ?></p>
+                <p>Me perdí por: <?php echo $v['ubicacion'] ?></p>
                 <p>Teléfono de dueño: <?php echo $v["tfono"] ?> </p>
             </div>
             <div class="perroimagen">
